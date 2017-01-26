@@ -1803,12 +1803,13 @@
 			background: url("images/arrow.svg") no-repeat;
 		}
 
-		.box :last-child {
+		.box:last-child {
 			margin-bottom: 0;
 		}
 
 		.box.style1 {
-			background: #fff;
+			background: #152e33;
+			color: lightgrey;
 			padding: 1.5em;
 		}
 
@@ -1863,11 +1864,15 @@
 				padding: 0;
 			}
 
+			.box.style1.right .inner header h2 {
+				font-weight: bold;
+			}
+
 			.box.style1.right .inner .button {
 				height: 50px;
 				width: 45%;
 				padding: 5px;
-				border-radius: 3px;
+				border-radius: 0;
 			}
 
 			.box.style1.right .inner footer {
@@ -1891,7 +1896,7 @@
 
 			.box.style1.left .inner {
 				margin-right: 50%;
-				padding-right: 3em;
+				padding-right: 2em;
 			}
 
 			.box.style1.left .inner p {
@@ -1906,11 +1911,15 @@
 				padding: 0;
 			}
 
+			.box.style1.left .inner header h2 {
+				font-weight: bold;
+			}
+
 			.box.style1.left .inner .button {
 				height: 50px;
 				width: 45%;
 				padding: 5px;
-				border-radius: 3px;
+				border-radius: 0;
 			}
 
 			.box.style1.left .inner footer {
@@ -1924,10 +1933,15 @@
 
 			.box.style2 header {
 				display: inline-block;
-				background: #fff;
-				padding: 2em 3em 2em 3em;
+				background: #152e33;
+				color: lightgrey;
+				padding: 1em 3em 1em 3em;
 				margin: 0;
 			}
+
+				.box.style2 header h2 {
+					font-size: 36px;
+				}
 
 				.box.style2 header p {
 					padding: 0;
@@ -1938,6 +1952,12 @@
 				padding: 40px 0 0px 0;
 			}
 
+			.devicon {
+				width: 80px;
+				height: 80px;
+				color: lightgrey;
+			}
+
 				.box.style2 .inner:after {
 					content: '';
 					display: block;
@@ -1946,6 +1966,10 @@
 					left: 50%;
 					height: 100%;
 					border-left: solid 1px #fff;
+				}
+
+				.box.style2 .inner:last-of-type:after {
+					display: none;
 				}
 
 				.box.style2 .inner .row {
@@ -1966,6 +1990,19 @@
 					position: relative;
 					z-index: 1;
 					padding: 20px;
+				}
+
+				.gallery-row {
+					margin-top: 50px;
+				}
+
+				.gallery-row li {
+					display: inline;
+				}
+
+				.gallery-row .devicon {
+					margin: 50px;
+					font-size: 100px;
 				}
 
 		.box.style3 {
@@ -2079,9 +2116,32 @@
 		text-align: center;
 		background: #35b88f url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
-		margin: 0;
+		margin: 9em 0 0 0;
 		background-size: 125% auto;
 	}
+
+	#banner:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -9em;
+			left: 50%;
+			height: 9em;
+			border-left: solid 1px #fff;
+		}
+
+		#banner:before {
+			content: '';
+			display: block;
+			width: 90px;
+			height: 66px;
+			position: absolute;
+			left: 50%;
+			top: -4.5em;
+			margin-left: -45px;
+			margin-top: -33px;
+			background: url("images/arrow.svg") no-repeat;
+		}
 
 		#banner .button {
 			color: #35b882;
@@ -2119,29 +2179,19 @@
 
 	#footer {
 		position: relative;
-		color: #fff;
+		color: lightgray;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 4.5em 0 0 0;
 	}
 
-		#footer:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: -4.5em;
-			left: 50%;
-			height: 4.5em;
-			border-left: solid 1px #fff;
-		}
-
 		#footer a {
-			color: #fff;
+			color: lightgray;
 			text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#footer a:hover {
+			#footer li a:hover {
 				color: #35b88f;
 				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
 				border-bottom-color: rgba(53, 184, 143, 0.5);
@@ -2150,13 +2200,19 @@
 		#footer .icons {
 			padding: 0.75em 2em 0.75em 2em;
 			border-radius: 3em;
-			border: solid 1px #fff;
+			border: solid 1px lightgray;
 			display: inline-block;
 			margin: 0 0 3em 0;
 		}
 
+		#footer .icons a {
+			display: inline;
+			margin: 0 30px;
+			text-align: right;
+			color: lightgray;
+		}
+
 		#footer .copyright {
-			margin: 0 0 9em 0;
 			font-size: 0.8em;
 		}
 
