@@ -2,6 +2,6 @@
 
 ## Take note on [SafeNotes](http://www.safenotes.io/)
 
-## Play [SpaceWar](https://spacewar0.herokuapp.com/)
+## Play [SpaceWar](https://bohdan0.github.io/SpaceWar)
 
 ## Check out my [Portfolio](https://bohdan0.github.io/)
