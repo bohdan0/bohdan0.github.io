@@ -1840,7 +1840,7 @@
 			}
 
 				.box.style1.right .image img {
-					height: 65%;
+					height: 82.5%;
 					position: absolute;
 					top: 50%;
 					left: 50%;
@@ -1885,15 +1885,14 @@
 				right: 0;
 			}
 
-				.box.style1.left .image img {
-					left: 0;
-					height: 75%;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					margin-right: -50%;
-					transform: translate(-50%, -50%);
-				}
+			.box.style1.left .image img {
+				height: 85%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+			}
 
 			.box.style1.left .inner {
 				margin-right: 50%;
