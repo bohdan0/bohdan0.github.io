@@ -1812,6 +1812,7 @@
 			color: lightgrey;
 			padding: 1.5em;
 			width: 100%;
+			font-family: arial;
 		}
 
 			.box.style1 .image {
@@ -1929,6 +1930,7 @@
 
 		.box.style2 {
 			text-align: center;
+			font-family: arial;
 		}
 
 			.box.style2 header {
@@ -2051,6 +2053,7 @@
 		#header header {
 			display: inline-block;
 			padding: 0 0 4.5em 0;
+			font-family: serif;
 		}
 
 			#header header h1 {
