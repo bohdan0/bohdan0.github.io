@@ -1312,7 +1312,7 @@
 	body {
 		background-color: lightgrey;
 		background-image: url("../../docs/background.png");
-		background-repeat: repeat, no-repeat;
+		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: top left, center 0;
 		background-attachment: fixed, fixed;
@@ -2193,7 +2193,7 @@
 	}
 
 		#footer ul {
-			background: rgba(35, 35, 35, .9);
+			background: rgba(35, 35, 35, 1);
 		}
 
 		#footer a {
