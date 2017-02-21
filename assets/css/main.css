@@ -1313,7 +1313,7 @@
 		background-color: lightgrey;
 		background-image: url("../../docs/background.png");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
+		background-size: cover;
 		background-position: top left, center 0;
 		background-attachment: fixed, fixed;
 		font-family: 'Source Sans Pro', sans-serif;
